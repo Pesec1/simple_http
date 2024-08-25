@@ -59,6 +59,6 @@ fn handler(allocator: std.mem.Allocator, stream: net.Stream) !void {
         //debug
         print("\nsecond line: {s}, {s}, {s}\n", .{ key, value, other });
     }
-    try stream.writer().print("Connection was made. Method: {s}\n uri: {s}\n version: {s}\n", .{ method, uri, version });
+    // try stream.writer().print("Connection was made. Method: {s}\n uri: {s}\n version: {s}\n", .{ method, uri, version });
     defer stream.close();
 }
